@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  react:
+    container_name: spa-react
+    build: .
+  nginx:
+    container_name: spa-nginx
+    build:
+      dockerfile: Dockerfile
+      context: ./nginx
+    ports:
+      - "3050:80"

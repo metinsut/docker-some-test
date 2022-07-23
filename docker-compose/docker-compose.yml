@@ -1,0 +1,7 @@
+version: "3.4"
+services:
+  node-server:
+    container_name: spa-test
+    build: .
+    ports:
+      - 3000:3000
